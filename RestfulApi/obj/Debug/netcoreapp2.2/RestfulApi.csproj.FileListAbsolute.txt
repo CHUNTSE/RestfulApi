@@ -1,0 +1,14 @@
+D:\Git\R\RestfulApi\RestfulApi\RestfulApi\bin\Debug\netcoreapp2.2\RestfulApi.deps.json
+D:\Git\R\RestfulApi\RestfulApi\RestfulApi\bin\Debug\netcoreapp2.2\RestfulApi.runtimeconfig.json
+D:\Git\R\RestfulApi\RestfulApi\RestfulApi\bin\Debug\netcoreapp2.2\RestfulApi.runtimeconfig.dev.json
+D:\Git\R\RestfulApi\RestfulApi\RestfulApi\bin\Debug\netcoreapp2.2\RestfulApi.dll
+D:\Git\R\RestfulApi\RestfulApi\RestfulApi\bin\Debug\netcoreapp2.2\RestfulApi.pdb
+D:\Git\R\RestfulApi\RestfulApi\RestfulApi\obj\Debug\netcoreapp2.2\RestfulApi.csprojAssemblyReference.cache
+D:\Git\R\RestfulApi\RestfulApi\RestfulApi\obj\Debug\netcoreapp2.2\RestfulApi.csproj.CoreCompileInputs.cache
+D:\Git\R\RestfulApi\RestfulApi\RestfulApi\obj\Debug\netcoreapp2.2\RestfulApi.RazorAssemblyInfo.cache
+D:\Git\R\RestfulApi\RestfulApi\RestfulApi\obj\Debug\netcoreapp2.2\RestfulApi.RazorAssemblyInfo.cs
+D:\Git\R\RestfulApi\RestfulApi\RestfulApi\obj\Debug\netcoreapp2.2\RestfulApi.AssemblyInfoInputs.cache
+D:\Git\R\RestfulApi\RestfulApi\RestfulApi\obj\Debug\netcoreapp2.2\RestfulApi.AssemblyInfo.cs
+D:\Git\R\RestfulApi\RestfulApi\RestfulApi\obj\Debug\netcoreapp2.2\RestfulApi.RazorTargetAssemblyInfo.cache
+D:\Git\R\RestfulApi\RestfulApi\RestfulApi\obj\Debug\netcoreapp2.2\RestfulApi.dll
+D:\Git\R\RestfulApi\RestfulApi\RestfulApi\obj\Debug\netcoreapp2.2\RestfulApi.pdb
