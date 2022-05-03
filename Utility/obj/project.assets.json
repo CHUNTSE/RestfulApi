@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git\\R\\RestfulApi\\RestfulApi\\Utility\\Utility.csproj",
+      "projectUniqueName": "D:\\Git\\R\\RestfulApi\\Utility\\Utility.csproj",
       "projectName": "Utility",
-      "projectPath": "D:\\Git\\R\\RestfulApi\\RestfulApi\\Utility\\Utility.csproj",
+      "projectPath": "D:\\Git\\R\\RestfulApi\\Utility\\Utility.csproj",
       "packagesPath": "C:\\Users\\t180203\\.nuget\\packages\\",
-      "outputPath": "D:\\Git\\R\\RestfulApi\\RestfulApi\\Utility\\obj\\",
+      "outputPath": "D:\\Git\\R\\RestfulApi\\Utility\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

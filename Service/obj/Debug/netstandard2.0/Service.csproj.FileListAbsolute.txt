@@ -10,3 +10,15 @@ D:\Git\R\RestfulApi\RestfulApi\Service\obj\Debug\netstandard2.0\Service.pdb
 D:\Git\R\RestfulApi\RestfulApi\Service\bin\Debug\netstandard2.0\Repository.dll
 D:\Git\R\RestfulApi\RestfulApi\Service\bin\Debug\netstandard2.0\Repository.pdb
 D:\Git\R\RestfulApi\RestfulApi\Service\obj\Debug\netstandard2.0\Service.csproj.CopyComplete
+D:\Git\R\RestfulApi\Service\bin\Debug\netstandard2.0\Service.deps.json
+D:\Git\R\RestfulApi\Service\bin\Debug\netstandard2.0\Service.dll
+D:\Git\R\RestfulApi\Service\bin\Debug\netstandard2.0\Service.pdb
+D:\Git\R\RestfulApi\Service\bin\Debug\netstandard2.0\Repository.dll
+D:\Git\R\RestfulApi\Service\bin\Debug\netstandard2.0\Repository.pdb
+D:\Git\R\RestfulApi\Service\obj\Debug\netstandard2.0\Service.csprojAssemblyReference.cache
+D:\Git\R\RestfulApi\Service\obj\Debug\netstandard2.0\Service.csproj.CoreCompileInputs.cache
+D:\Git\R\RestfulApi\Service\obj\Debug\netstandard2.0\Service.AssemblyInfoInputs.cache
+D:\Git\R\RestfulApi\Service\obj\Debug\netstandard2.0\Service.AssemblyInfo.cs
+D:\Git\R\RestfulApi\Service\obj\Debug\netstandard2.0\Service.csproj.CopyComplete
+D:\Git\R\RestfulApi\Service\obj\Debug\netstandard2.0\Service.dll
+D:\Git\R\RestfulApi\Service\obj\Debug\netstandard2.0\Service.pdb
