@@ -11,5 +11,15 @@ namespace Repository.Models
         {
             configuration.Bind(this);
         }
+
+        /// <summary>
+        /// DB連線字串
+        /// </summary>
+        public static DB ConnectionStrings { get; set; }
+    }
+
+    public class DB
+    {
+        public string Sql { get; set; }
     }
 }

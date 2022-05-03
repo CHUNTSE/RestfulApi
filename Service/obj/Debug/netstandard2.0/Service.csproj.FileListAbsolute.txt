@@ -22,3 +22,5 @@ D:\Git\R\RestfulApi\Service\obj\Debug\netstandard2.0\Service.AssemblyInfo.cs
 D:\Git\R\RestfulApi\Service\obj\Debug\netstandard2.0\Service.csproj.CopyComplete
 D:\Git\R\RestfulApi\Service\obj\Debug\netstandard2.0\Service.dll
 D:\Git\R\RestfulApi\Service\obj\Debug\netstandard2.0\Service.pdb
+D:\Git\R\RestfulApi\Service\bin\Debug\netstandard2.0\Utility.dll
+D:\Git\R\RestfulApi\Service\bin\Debug\netstandard2.0\Utility.pdb
