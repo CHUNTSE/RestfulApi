@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Repository.Models;
+using RestfulApi.Attributes;
 using Service.Interfaces;
 
 namespace RestfulApi.Controllers
@@ -34,12 +35,14 @@ namespace RestfulApi.Controllers
 
         // POST api/values
         [HttpPost]
+        [BasicAuthentication]
         public void Post([FromBody] List<EmployeeEntity> employeeList)
         {
             _employeeService.Update(employeeList);
         }
 
         [HttpPut("{employeeId:int}")]
+        [BasicAuthentication]
         public void Put(int employeeId, [FromBody] EmployeeEntity employeeData)
         {
             _employeeService.UpdateByEmployeeId(employeeId, employeeData);
