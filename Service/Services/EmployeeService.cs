@@ -14,23 +14,51 @@ namespace Service.Services
     {
         private readonly IEmployeeRepository _employeeRepository;
 
-        public List<EmployeeEntity> GetAll()
+        public EmployeeService(IEmployeeRepository employeeRepository)
         {
-            Task<IEnumerable<EmployeeEntity>> task = _employeeRepository.GetAll();
+            _employeeRepository = employeeRepository;
+        }
 
-            List<EmployeeEntity> employeeList = task.Result.ToList();
+        public async Task<List<EmployeeEntity>> GetAll()
+        {
+            var task = await _employeeRepository.GetAllAsync();
+
+            List<EmployeeEntity> employeeList = task.ToList();
 
             return employeeList;
         }
 
-        public void Insert(List<EmployeeEntity> employeeData)
+        public async Task<EmployeeEntity> GetByEmployeeId(int employeeId)
         {
-            _employeeRepository.Insert(employeeData);
+            var task = _employeeRepository.GetAllAsync();
+
+            EmployeeEntity employeeData = (await task).FirstOrDefault(x => x.EmployeeId == employeeId) ?? new EmployeeEntity();
+
+            return employeeData;
         }
 
-        public void Update(List<EmployeeEntity> employeeData)
+        public void Insert(List<EmployeeEntity> employeeList)
         {
-            _employeeRepository.Update(employeeData);
+            _employeeRepository.Insert(employeeList);
+        }
+
+        public void Update(List<EmployeeEntity> employeeList)
+        {
+            _employeeRepository.Update(employeeList);
+        }
+
+        public void UpdateByEmployeeId(int employeeId, EmployeeEntity employeeData)
+        {
+            EmployeeEntity specifyEmployeeData = GetByEmployeeId(employeeId).Result;
+
+            if (specifyEmployeeData != null && specifyEmployeeData.EmployeeId == employeeId)
+            {
+                employeeData.EmployeeId = employeeId;
+
+                List<EmployeeEntity> employeeList = new List<EmployeeEntity>() { employeeData };
+
+                _employeeRepository.Update(employeeList);
+            }
         }
 
         public void Delete(int employeeId)

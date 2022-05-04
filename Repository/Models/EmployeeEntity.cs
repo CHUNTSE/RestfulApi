@@ -12,7 +12,7 @@ namespace Repository.Models
         /// 員工ID
         /// </summary>
         [Key]
-        public string EmployeeId { get; set; }
+        public int EmployeeId { get; set; }
 
         /// <summary>
         /// 名

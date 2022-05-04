@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json.Serialization;
 using Repository.Models;
+using RestfulApi.Attributes;
 using RestfulApi.Interface;
 
 namespace RestfulApi
@@ -78,6 +79,7 @@ namespace RestfulApi
 
             });
 
+            app.UseLogMiddleware();
             app.UseHttpsRedirection();
             appLifetime.DisposeAutofac();
             app.UseMvc();

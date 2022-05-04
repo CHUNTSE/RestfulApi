@@ -2,16 +2,21 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Service.Interfaces
 {
     public interface IEmployeeService
     {
-        List<EmployeeEntity> GetAll();
+        Task<List<EmployeeEntity>> GetAll();
 
-        void Insert(List<EmployeeEntity> employeeData);
+        Task<EmployeeEntity> GetByEmployeeId(int employeeId);
 
-        void Update(List<EmployeeEntity> employeeData);
+        void Insert(List<EmployeeEntity> employeeList);
+
+        void Update(List<EmployeeEntity> employeeList);
+
+        void UpdateByEmployeeId(int employeeId, EmployeeEntity employeeData);
 
         void Delete(int employeeId);
     }

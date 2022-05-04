@@ -15,37 +15,40 @@ namespace RestfulApi.Controllers
     {
         private readonly IEmployeeService _employeeService;
 
-        [HttpGet]
-        public ActionResult<List<EmployeeEntity>> Get()
+        public EmployeeController(IEmployeeService employeeService)
         {
-            return _employeeService.GetAll();
+            _employeeService = employeeService;
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        [HttpGet]
+        public async Task<ActionResult<List<EmployeeEntity>>> GetAsync()
         {
-            return "value";
+            return await _employeeService.GetAll();
+        }
+
+        [HttpGet("{employeeId:int}")]
+        public async Task<ActionResult<EmployeeEntity>> GetByEmployeeIdAsync(int employeeId)
+        {
+            return await _employeeService.GetByEmployeeId(employeeId);
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] List<EmployeeEntity> employeeData)
+        public void Post([FromBody] List<EmployeeEntity> employeeList)
         {
-            _employeeService.Update(employeeData);
+            _employeeService.Update(employeeList);
         }
 
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("{employeeId:int}")]
+        public void Put(int employeeId, [FromBody] EmployeeEntity employeeData)
         {
+            _employeeService.UpdateByEmployeeId(employeeId, employeeData);
         }
 
-        // DELETE api/values/5
-        [HttpDelete("{id:int}")]
-        public void Delete(int id)
+        [HttpDelete("{employeeId:int}")]
+        public void Delete(int employeeId)
         {
-            _employeeService.Delete(id);
+            _employeeService.Delete(employeeId);
         }
     }
 }

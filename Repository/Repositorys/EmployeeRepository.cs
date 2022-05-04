@@ -10,7 +10,7 @@ namespace Repository.Repositorys
 {
     public class EmployeeRepository : DBHelper, IEmployeeRepository
     {
-        public async Task<IEnumerable<EmployeeEntity>> GetAll()
+        public async Task<IEnumerable<EmployeeEntity>> GetAllAsync()
         {
             const string sql = @"SELECT * FROM Employee WITH(NOLOCK)";
 

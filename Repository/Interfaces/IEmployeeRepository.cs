@@ -8,7 +8,7 @@ namespace Repository.Interfaces
 {
     public interface IEmployeeRepository
     {
-        Task<IEnumerable<EmployeeEntity>> GetAll();
+        Task<IEnumerable<EmployeeEntity>> GetAllAsync();
 
         void Insert(List<EmployeeEntity> employeeData);
 
