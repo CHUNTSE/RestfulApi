@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace RestfulApi.Attributes
+namespace RestfulApi.Middleware
 {
     public static class MiddlewareConfig
     {

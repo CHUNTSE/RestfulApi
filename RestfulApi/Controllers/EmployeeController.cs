@@ -35,14 +35,14 @@ namespace RestfulApi.Controllers
 
         // POST api/values
         [HttpPost]
-        //[BasicAuthentication]
+        [JwtAuth]
         public void Post([FromBody] List<EmployeeEntity> employeeList)
         {
             _employeeService.Update(employeeList);
         }
 
         [HttpPut("{employeeId:int}")]
-        //[BasicAuthentication]
+        [JwtAuth]
         public void Put(int employeeId, [FromBody] EmployeeEntity employeeData)
         {
             _employeeService.UpdateByEmployeeId(employeeId, employeeData);
