@@ -23,15 +23,15 @@ namespace RestfulApi.Middleware
         {
             try
             {
-                Stream requestStream = Context.Response.Body;
+                Context.Request.EnableBuffering();
+
+                Stream requestStream = Context.Request.Body;
 
                 _logger.LogTrace(ReadStream(requestStream));
 
+                Context.Request.Body.Seek(0, SeekOrigin.Begin);
+
                 await _next(Context);
-
-                Stream responseStream = Context.Response.Body;
-
-                _logger.LogTrace(ReadStream(responseStream));
             }
             catch (Exception ex)
             {
@@ -42,8 +42,6 @@ namespace RestfulApi.Middleware
         private string ReadStream(Stream stream)
         {
             string readtext = new StreamReader(stream).ReadToEnd();
-
-            stream.Position = 0;
 
             return readtext;
         }

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "95c931b70b5d6ab17d3cfca8ed43f2bcdc50cf3d"
+    "signature": "6c9df79746c54a0a73c43e81688d61f8c1de2f29"
   },
   "compilationOptions": {
     "defines": [
@@ -100,6 +100,28 @@
         },
         "compile": {
           "lib/netstandard2.0/Dapper.Contrib.dll": {}
+        }
+      },
+      "jose-jwt/4.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "11.0.2",
+          "System.IO.Compression": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Runtime.Serialization.Primitives": "4.3.0",
+          "System.Security.Cryptography.Algorithms": "4.3.0",
+          "System.Security.Cryptography.Cng": "4.5.0",
+          "System.Security.Cryptography.Csp": "4.3.0",
+          "System.Security.Cryptography.X509Certificates": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/jose-jwt.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/jose-jwt.dll": {}
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
@@ -848,7 +870,8 @@
       },
       "Service/1.0.0": {
         "dependencies": {
-          "Repository": "1.0.0"
+          "Repository": "1.0.0",
+          "jose-jwt": "4.0.0"
         },
         "runtime": {
           "Service.dll": {}
@@ -3817,6 +3840,13 @@
       "sha512": "sha512-sUfDVIf8LlHNiz3MfUFodeyRiemfN1JFkPxYjCxFWlwNPg1iQ49mB+0E89TkywWs4X8fiRWOVDQgtH5FtzK5Kw==",
       "path": "dapper.contrib/2.0.78",
       "hashPath": "dapper.contrib.2.0.78.nupkg.sha512"
+    },
+    "jose-jwt/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p4nx0LMM73UqhBpZkdYvMJAJmoa6Ory0zla5kkBZ0z0+SwDAPq7a1R55vqbdWUaRY+VzYza1kPfJVh0rymYsmw==",
+      "path": "jose-jwt/4.0.0",
+      "hashPath": "jose-jwt.4.0.0.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
       "type": "package",

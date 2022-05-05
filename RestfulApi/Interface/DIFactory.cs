@@ -30,6 +30,14 @@ namespace RestfulApi.Interface
                 .As<IEmployeeService>()
                 .InstancePerLifetimeScope();
 
+            builder.RegisterType<EmployeeConfigRepository>()
+                .As<IEmployeeConfigRepository>()
+                .InstancePerLifetimeScope();
+
+            builder.RegisterType<LoginService>()
+                .As<ILoginService>()
+                .InstancePerLifetimeScope();
+
             return new AutofacServiceProvider(builder.Build());
         }
 

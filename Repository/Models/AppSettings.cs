@@ -16,10 +16,20 @@ namespace Repository.Models
         /// DB連線字串
         /// </summary>
         public static DB ConnectionStrings { get; set; }
+
+        /// <summary>
+        /// Key
+        /// </summary>
+        public static Key Keys { get; set; }
     }
 
     public class DB
     {
         public string Sql { get; set; }
+    }
+
+    public class Key
+    {
+        public string JwtKey { get; set; }
     }
 }
